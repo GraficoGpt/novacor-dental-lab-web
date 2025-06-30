@@ -1,5 +1,6 @@
 
 import { Button } from '@/components/ui/button';
+import { MapPin, Zap, Phone, Mail, Award, Clock, Shield } from 'lucide-react';
 
 const HeroSection = () => {
   const scrollToServices = () => {
@@ -15,7 +16,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 hero-pattern"></div>
       
       {/* Multiple Background Gradients for depth */}
-      <div className="absolute inset-0 bg-gradient-to-br from-medical-blue/5 to-medical-green/5"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5"></div>
       <div className="absolute inset-0 bg-gradient-to-tr from-primary/3 via-transparent to-accent/3"></div>
       
       {/* Animated floating elements */}
@@ -28,8 +29,8 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="max-w-5xl mx-auto animate-fade-in">
           {/* Badge/Credencial */}
-          <div className="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-primary/20 text-primary font-medium text-sm mb-8 shadow-lg">
-            <div className="w-2 h-2 bg-primary rounded-full mr-2 animate-pulse"></div>
+          <div className="inline-flex items-center px-6 py-3 bg-white/90 backdrop-blur-sm rounded-full border border-primary/20 text-primary font-medium text-sm mb-8 shadow-lg hover:shadow-xl transition-all duration-300">
+            <Award className="w-4 h-4 mr-2 text-primary animate-pulse" />
             Técnico Profesional Certificado • Bogotá, Colombia
           </div>
           
@@ -55,17 +56,17 @@ const HeroSection = () => {
           
           {/* Stats */}
           <div className="grid grid-cols-3 gap-6 max-w-2xl mx-auto mb-10">
-            <div className="text-center">
+            <div className="text-center p-4 bg-white/60 backdrop-blur-sm rounded-xl shadow-lg">
               <div className="text-3xl font-bold text-primary">500+</div>
-              <div className="text-sm text-gray-600">Casos Exitosos</div>
+              <div className="text-sm text-gray-600 font-medium">Casos Exitosos</div>
             </div>
-            <div className="text-center">
+            <div className="text-center p-4 bg-white/60 backdrop-blur-sm rounded-xl shadow-lg">
               <div className="text-3xl font-bold text-accent">48h</div>
-              <div className="text-sm text-gray-600">Tiempo Promedio</div>
+              <div className="text-sm text-gray-600 font-medium">Tiempo Promedio</div>
             </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-purple-600">100%</div>
-              <div className="text-sm text-gray-600">Garantía</div>
+            <div className="text-center p-4 bg-white/60 backdrop-blur-sm rounded-xl shadow-lg">
+              <div className="text-3xl font-bold text-green-600">100%</div>
+              <div className="text-sm text-gray-600 font-medium">Garantía</div>
             </div>
           </div>
           
@@ -73,9 +74,9 @@ const HeroSection = () => {
             <Button 
               size="lg" 
               onClick={scrollToServices}
-              className="medical-gradient text-white px-10 py-4 text-lg hover:opacity-90 transition-all duration-300 hover:scale-105 shadow-lg"
+              className="novacor-gradient text-white px-10 py-4 text-lg hover:opacity-90 transition-all duration-300 hover:scale-105 shadow-lg font-semibold"
             >
-              <span className="mr-2">🦷</span>
+              <Shield className="w-5 h-5 mr-2" />
               Ver Nuestros Servicios
             </Button>
             
@@ -83,19 +84,19 @@ const HeroSection = () => {
               size="lg" 
               variant="outline" 
               onClick={() => window.location.href = 'tel:3108723348'}
-              className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-10 py-4 text-lg transition-all duration-300 hover:scale-105 shadow-lg"
+              className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-10 py-4 text-lg transition-all duration-300 hover:scale-105 shadow-lg font-semibold"
             >
-              <span className="mr-2">📞</span>
+              <Phone className="w-5 h-5 mr-2" />
               Consulta Inmediata
             </Button>
           </div>
           
           {/* Enhanced Contact Info */}
-          <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 shadow-xl border border-white/20 max-w-3xl mx-auto">
+          <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 shadow-xl border border-white/20 max-w-3xl mx-auto">
             <div className="grid md:grid-cols-2 gap-4 text-gray-700">
               <div className="flex items-center justify-center md:justify-start space-x-3">
-                <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
-                  <span className="text-primary">📍</span>
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
+                  <MapPin className="w-6 h-6 text-primary" />
                 </div>
                 <div className="text-left">
                   <div className="font-semibold">Ubicación Estratégica</div>
@@ -104,12 +105,17 @@ const HeroSection = () => {
               </div>
               
               <div className="flex items-center justify-center md:justify-start space-x-3">
-                <div className="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center">
-                  <span className="text-accent">⚡</span>
+                <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center">
+                  <Zap className="w-6 h-6 text-accent" />
                 </div>
                 <div className="text-left">
                   <div className="font-semibold">Contacto Directo</div>
-                  <div className="text-sm">310-872-3348 • novacorlab@gmail.com</div>
+                  <div className="text-sm flex items-center gap-2">
+                    <Phone className="w-4 h-4" />
+                    310-872-3348 • 
+                    <Mail className="w-4 h-4" />
+                    novacorlab@gmail.com
+                  </div>
                 </div>
               </div>
             </div>
