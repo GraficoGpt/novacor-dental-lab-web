@@ -21,33 +21,32 @@ All colors MUST be HSL.
     --popover-foreground: 222.2 84% 4.9%;
 
     /* NOVACOR Brand Colors */
-    --primary: 210 100% 50%; /* Azul NOVACOR */
+    --primary: 198 80% 38%; /* #0D71B9 */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 10% 96%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 200 100% 60%; /* #009FE3 */
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 10% 96%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 195 10% 55%; /* #6F858C */
+    --muted-foreground: 0 0% 100%;
 
-    --accent: 27 96% 61%; /* Naranja/Dorado NOVACOR */
+    --accent: 198 80% 38%; /* #0D71B9 */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 210 100% 50%;
+    --border: 200 100% 60% / 0.2;
+    --input: 200 100% 60% / 0.2;
+    --ring: 198 80% 38%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
     /* NOVACOR Custom Colors */
-    --novacor-blue: 210 100% 50%;
-    --novacor-orange: 27 96% 61%;
-    --novacor-dark: 222 47% 11%;
-    --novacor-gray: 215 16% 47%;
-    --novacor-light: 210 40% 98%;
+    --novacor-dark: 202 70% 19%; /* #0A3754 */
+    --novacor-blue: 198 80% 38%; /* #0D71B9 */
+    --novacor-gray: 195 10% 55%; /* #6F858C */
+    --novacor-light: 200 100% 60% / 0.1; /* #009FE3 con 10% opacidad */
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -60,33 +59,25 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 210 100% 50%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 27 96% 61%;
-    --accent-foreground: 210 40% 98%;
+    --background: 202 70% 19%; /* #0A3754 */
+    --foreground: 0 0% 100%;
+    --card: 198 80% 38%; /* #0D71B9 */
+    --card-foreground: 0 0% 100%;
+    --popover: 198 80% 38%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 198 80% 38%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 200 100% 60%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 195 10% 55%;
+    --muted-foreground: 0 0% 100%;
+    --accent: 198 80% 38%;
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 200 100% 60% / 0.2;
+    --input: 200 100% 60% / 0.2;
+    --ring: 198 80% 38%;
   }
 }
 
@@ -108,11 +99,11 @@ All colors MUST be HSL.
 
 @layer components {
   .novacor-gradient {
-    background: linear-gradient(135deg, hsl(210, 100%, 50%) 0%, hsl(27, 96%, 61%) 100%);
+    background: linear-gradient(135deg, hsl(202, 70%, 19%) 0%, hsl(198, 80%, 38%) 100%);
   }
   
   .novacor-gradient-light {
-    background: linear-gradient(135deg, hsl(210, 100%, 95%) 0%, hsl(27, 96%, 95%) 100%);
+    background: linear-gradient(135deg, hsl(200, 100%, 60%, 0.1) 0%, hsl(195, 10%, 55%, 0.2) 100%);
   }
 
   .hero-pattern {
