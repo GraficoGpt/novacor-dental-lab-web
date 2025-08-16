@@ -2,20 +2,15 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { ArrowRight, Phone, Mail, Crown, Wrench, Award, MapPin, Clock, CheckCircle, Users, Zap, Shield, Star, Microscope, Timer } from 'lucide-react';
+import Logo from '@/components/Logo';
 const Index = () => {
   return <div className="min-h-screen bg-background">
       {/* Navigation */}
       <nav className="border-b bg-card/50 backdrop-blur supports-[backdrop-filter]:bg-card/30 sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <Crown className="h-6 w-6 text-primary-foreground" />
-              </div>
-              <div>
-                <h1 className="text-2xl font-bold text-primary">NOVACOR</h1>
-                <p className="text-xs text-muted-foreground">Laboratorio Protésico</p>
-              </div>
+            <div className="flex items-center">
+              <Logo className="h-12 w-auto" />
             </div>
             <div className="flex items-center space-x-3">
               <Badge variant="secondary" className="hidden sm:flex">
@@ -430,14 +425,8 @@ const Index = () => {
       <footer className="border-t bg-card/30 backdrop-blur">
         <div className="container mx-auto px-4 py-12">
           <div className="text-center space-y-4">
-            <div className="flex items-center justify-center space-x-3 mb-6">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <Crown className="h-6 w-6 text-primary-foreground" />
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-primary">NOVACOR</h3>
-                <p className="text-sm text-muted-foreground">Laboratorio Protésico</p>
-              </div>
+            <div className="flex items-center justify-center mb-6">
+              <Logo className="h-16 w-auto" />
             </div>
             
             <div className="flex justify-center space-x-6 text-sm text-muted-foreground">
