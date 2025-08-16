@@ -2,10 +2,8 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { ArrowRight, Phone, Mail, Crown, Wrench, Award, MapPin, Clock, CheckCircle, Users, Zap, Shield, Star, Microscope, Timer } from 'lucide-react';
-
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       {/* Navigation */}
       <nav className="border-b bg-card/50 backdrop-blur supports-[backdrop-filter]:bg-card/30 sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
@@ -41,12 +39,7 @@ const Index = () => {
         
         <div className="container mx-auto px-4 relative">
           <div className="text-center max-w-5xl mx-auto">
-            <div className="flex justify-center mb-6">
-              <Badge variant="outline" className="bg-primary/5 border-primary/20">
-                <Star className="w-3 h-3 mr-1" />
-                Laboratorio Certificado ISO 13485
-              </Badge>
-            </div>
+            
             
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
               Prótesis Dentales de 
@@ -56,17 +49,18 @@ const Index = () => {
               </span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-fade-in max-w-3xl mx-auto leading-relaxed" style={{animationDelay: '0.2s'}}>
+            <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-fade-in max-w-3xl mx-auto leading-relaxed" style={{
+            animationDelay: '0.2s'
+          }}>
               Especializados en coronas, puentes, prótesis removibles y trabajos de implantología 
               con materiales premium y tecnología de vanguardia. 
               <span className="text-primary font-medium">Entrega garantizada en 24-48 horas.</span>
             </p>
             
-            <div className="flex flex-wrap justify-center gap-4 mb-8 animate-fade-in" style={{animationDelay: '0.3s'}}>
-              <Badge variant="secondary" className="text-sm">
-                <Microscope className="w-4 h-4 mr-1" />
-                Tecnología CAD/CAM
-              </Badge>
+            <div className="flex flex-wrap justify-center gap-4 mb-8 animate-fade-in" style={{
+            animationDelay: '0.3s'
+          }}>
+              
               <Badge variant="secondary" className="text-sm">
                 <Shield className="w-4 h-4 mr-1" />
                 Garantía de Calidad
@@ -77,7 +71,9 @@ const Index = () => {
               </Badge>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{animationDelay: '0.4s'}}>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{
+            animationDelay: '0.4s'
+          }}>
               <Button size="lg" className="group bg-primary hover:bg-primary/90 shadow-lg">
                 <Phone className="mr-2 h-5 w-5" />
                 Solicitar Cotización
@@ -424,19 +420,7 @@ const Index = () => {
             </div>
             
             <div className="text-center">
-              <Card className="inline-block border-0 shadow-2xl bg-gradient-to-br from-primary to-primary/90 text-primary-foreground p-8">
-                <div className="space-y-4">
-                  <h3 className="text-2xl font-bold">¿Listo para comenzar?</h3>
-                  <p className="text-primary-foreground/90 max-w-md">
-                    Solicita tu cotización ahora y recibe una respuesta detallada en menos de 24 horas
-                  </p>
-                  <Button size="lg" variant="secondary" className="group bg-white text-primary hover:bg-gray-50">
-                    <Phone className="mr-2 h-5 w-5" />
-                    Solicitar Cotización Ahora
-                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  </Button>
-                </div>
-              </Card>
+              
             </div>
           </div>
         </div>
@@ -468,7 +452,7 @@ const Index = () => {
             </div>
             
             <div className="flex justify-center space-x-4">
-              <Badge variant="outline">ISO 13485</Badge>
+              
               <Badge variant="outline">Garantía Total</Badge>
               <Badge variant="outline">Entrega Express</Badge>
             </div>
@@ -481,8 +465,6 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
