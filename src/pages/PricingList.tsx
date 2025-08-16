@@ -4,6 +4,7 @@ import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Crown, Wrench, Settings, ArrowLeft } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import Logo from '@/components/Logo';
 
 const PricingList = () => {
   const [password, setPassword] = useState('');
@@ -62,7 +63,9 @@ const PricingList = () => {
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-muted p-4">
         <Card className="w-full max-w-md">
           <CardHeader className="text-center">
-            <CardTitle className="text-2xl font-bold text-primary">NOVACOR</CardTitle>
+            <div className="flex items-center justify-center mb-4">
+              <Logo className="h-10 w-auto" />
+            </div>
             <p className="text-muted-foreground">Acceso a Lista de Precios</p>
           </CardHeader>
           <CardContent className="space-y-4">
@@ -90,9 +93,9 @@ const PricingList = () => {
     <div className="min-h-screen bg-gradient-to-br from-background to-muted">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="text-center mb-8 sm:mb-12">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            NOVACOR
-          </h1>
+          <div className="flex items-center justify-center mb-6">
+            <Logo className="h-10 w-auto sm:h-12" />
+          </div>
           <p className="text-lg sm:text-xl text-muted-foreground mb-6">Lista de Precios</p>
           <Button variant="outline" onClick={() => navigate('/')}>
             <ArrowLeft className="mr-2 h-4 w-4" />
