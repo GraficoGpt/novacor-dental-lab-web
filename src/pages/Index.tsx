@@ -7,17 +7,17 @@ const Index = () => {
   return <div className="min-h-screen bg-background">
       {/* Navigation */}
       <nav className="border-b bg-card/50 backdrop-blur supports-[backdrop-filter]:bg-card/30 sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
-              <Logo className="h-12 w-auto" />
+              <Logo className="h-8 w-auto sm:h-10" />
             </div>
             <div className="flex items-center space-x-3">
               <Badge variant="secondary" className="hidden sm:flex">
                 <Clock className="w-3 h-3 mr-1" />
                 Entrega 24-48h
               </Badge>
-              <Button variant="outline" size="sm">
+              <Button variant="outline" size="sm" aria-label="Contactar por teléfono">
                 <Phone className="mr-2 h-4 w-4" />
                 Contactar
               </Button>
@@ -27,16 +27,16 @@ const Index = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-32 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
+      <section className="relative py-16 sm:py-20 lg:py-32 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
         <div className="absolute inset-0 hero-pattern opacity-5"></div>
         <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-10 w-40 h-40 bg-accent/10 rounded-full blur-3xl"></div>
         
-        <div className="container mx-auto px-4 relative">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center max-w-5xl mx-auto">
             
             
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
               Prótesis Dentales de 
               <span className="text-primary block relative">
                 Alta Calidad
@@ -44,7 +44,7 @@ const Index = () => {
               </span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-fade-in max-w-3xl mx-auto leading-relaxed" style={{
+            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-8 animate-fade-in max-w-3xl mx-auto leading-relaxed px-4" style={{
             animationDelay: '0.2s'
           }}>
               Especializados en coronas, puentes, prótesis removibles y trabajos de implantología 
@@ -69,7 +69,7 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{
             animationDelay: '0.4s'
           }}>
-              <Button size="lg" className="group bg-primary hover:bg-primary/90 shadow-lg">
+              <Button size="lg" className="group bg-primary hover:bg-primary/90 shadow-lg" aria-label="Solicitar cotización por teléfono">
                 <Phone className="mr-2 h-5 w-5" />
                 Solicitar Cotización
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -85,9 +85,9 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 bg-gradient-to-r from-muted/30 via-muted/50 to-muted/30 relative">
+      <section className="py-16 sm:py-20 bg-gradient-to-r from-muted/30 via-muted/50 to-muted/30 relative">
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-        <div className="container mx-auto px-4 relative">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-16">
             <Badge variant="outline" className="mb-4 bg-primary/5 border-primary/20">
               <Zap className="w-3 h-3 mr-1" />
@@ -100,7 +100,7 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
             <Card className="border-0 shadow-xl bg-gradient-to-br from-card to-card/80 hover:shadow-2xl transition-all duration-300 group">
               <CardHeader className="text-center pb-4">
                 <div className="w-20 h-20 bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
@@ -219,9 +219,9 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-20 bg-background relative overflow-hidden">
+      <section className="py-16 sm:py-20 bg-background relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-accent to-primary"></div>
-        <div className="container mx-auto px-4 relative">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
               <Badge variant="outline" className="mb-4 bg-primary/5 border-primary/20">
@@ -237,7 +237,7 @@ const Index = () => {
               </p>
             </div>
             
-            <div className="grid md:grid-cols-4 gap-8 mb-12">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 mb-12">
               <Card className="text-center border-0 bg-gradient-to-br from-primary/5 to-primary/10 shadow-lg">
                 <CardContent className="pt-6">
                   <div className="text-4xl font-bold text-primary mb-2">15+</div>
@@ -268,7 +268,7 @@ const Index = () => {
               </Card>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
               <Card className="border-0 shadow-lg bg-gradient-to-br from-card to-card/80">
                 <CardHeader>
                   <CardTitle className="flex items-center">
@@ -342,9 +342,9 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5 relative">
+      <section className="py-16 sm:py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5 relative">
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-        <div className="container mx-auto px-4 relative">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
               <Badge variant="outline" className="mb-4 bg-primary/5 border-primary/20">
@@ -358,7 +358,7 @@ const Index = () => {
               </p>
             </div>
             
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12">
               <Card className="border-0 shadow-xl bg-gradient-to-br from-card to-card/80 hover:shadow-2xl transition-all duration-300 group">
                 <CardHeader className="text-center">
                   <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
@@ -423,10 +423,10 @@ const Index = () => {
 
       {/* Footer */}
       <footer className="border-t bg-card/30 backdrop-blur">
-        <div className="container mx-auto px-4 py-12">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <div className="text-center space-y-4">
             <div className="flex items-center justify-center mb-6">
-              <Logo className="h-16 w-auto" />
+              <Logo className="h-12 w-auto sm:h-14" />
             </div>
             
             <div className="flex justify-center space-x-6 text-sm text-muted-foreground">
