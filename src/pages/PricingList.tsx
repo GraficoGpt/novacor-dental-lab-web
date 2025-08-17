@@ -21,41 +21,46 @@ const PricingList = () => {
 
   const pricingData = [
     {
-      category: 'Prótesis Fijas',
+      category: 'Prótesis Fija',
       icon: Crown,
       items: [
-        { name: 'Corona Metal Porcelana', price: 165000 },
-        { name: 'Corona Zirconio', price: 270000 },
-        { name: 'Ceramica de encia/hombro céramico por unidad', price: 50000 },
-        { name: 'Corona, Carilla, Incrustación o "Lente" E-MAX', price: 280000 },
+        { name: 'Carilla, corona, incrustación o "lente" disilicato de litio E-MAX', price: 250000 },
+        { name: 'Cerámica de encía/ hombro cerámico por unidad', price: 40000 },
+        { name: 'Corona metal cerámica', price: 140000 },
+        { name: 'Corona zirconio', price: 260000 },
         { name: 'Colado de UCLA calcinable, núcleos o ganchos', price: 55000 },
-        { name: 'Hombro cerámico 180°', price: 50000 },
-        { name: 'Implant bridge zro2 pro conexión', price: 1150000 },
-        { name: 'Barra hibrida cada conexión (metal acrílico)', price: 370000 },
+        { name: 'Hombro cerámico 180°', price: 40000 },
+        { name: 'Implant bridge zro2 por conexión', price: 1150000 },
+        { name: 'Barra híbrida cada conexión (metal acrílico)', price: 360000 },
         { name: 'Personalizado de abutment', price: 50000 },
+        { name: 'Restauraciones en cerómero (carillas incrustaciones)', price: 100000 },
       ]
     },
     {
-      category: 'Prótesis Removibles',
+      category: 'Prótesis Removible',
       icon: Wrench,
       items: [
-        { name: 'Prótesis Total Superior', price: 380000 },
-        { name: 'Prótesis Total Inferior', price: 380000 },
-        { name: 'Prótesis Parcial Acrílica', price: 280000 },
-        { name: 'Prótesis Flexible Nylon', price: 420000 },
-        { name: 'Esquelético Cromo Cobalto', price: 480000 },
-        { name: 'Reparación Prótesis', price: 80000 }
+        { name: 'Prótesis total o parcial alto impacto (Biodent)', price: 190000 },
+        { name: 'Prótesis total o parcial convencional (Biodent)', price: 150000 },
+        { name: 'Acker flexible', price: 140000 },
+        { name: 'Prótesis flexible', price: 250000 },
+        { name: 'Prótesis removible (estructura metálica)', price: 320000 },
+        { name: 'Rebase', price: 60000 },
+        { name: 'Reparación', price: 50000 },
+        { name: 'Rodete y plato base', price: 50000 }
       ]
     },
     {
-      category: 'Servicios Adicionales',
+      category: 'Otros',
       icon: Settings,
       items: [
-        { name: 'Toma de Color', price: 25000 },
-        { name: 'Articulación en ASA', price: 35000 },
-        { name: 'Encerado Diagnóstico', price: 45000 },
-        { name: 'Guía Quirúrgica', price: 120000 },
-        { name: 'Rebasado Blando', price: 90000 }
+        { name: 'Cubeta', price: 50000 },
+        { name: 'Modelo impreso 3D', price: 50000 },
+        { name: 'Modelo impreso con diseño para muck up (hasta 6 unds)', price: 100000 },
+        { name: 'Placa NMR (dura o blanda)', price: 50000 },
+        { name: 'Placa Extra confort', price: 190000 },
+        { name: 'Provisionales PMMA monocapa', price: 50000 },
+        { name: 'Provisionales PMMA multicapa', price: 60000 }
       ]
     }
   ];
