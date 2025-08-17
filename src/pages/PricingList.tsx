@@ -21,7 +21,7 @@ const PricingList = () => {
 
   const pricingData = [
     {
-      category: 'Prótesis Fija',
+      category: 'Prótesis fija',
       icon: Crown,
       items: [
         { name: 'Carilla, corona, incrustación o "lente" disilicato de litio E-MAX', price: 250000 },
@@ -37,7 +37,7 @@ const PricingList = () => {
       ]
     },
     {
-      category: 'Prótesis Removible',
+      category: 'Prótesis removible',
       icon: Wrench,
       items: [
         { name: 'Prótesis total o parcial alto impacto (Biodent)', price: 190000 },
