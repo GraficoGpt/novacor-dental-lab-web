@@ -24,13 +24,15 @@ const PricingList = () => {
       category: 'Prótesis Fijas',
       icon: Crown,
       items: [
-        { name: 'Corona Metal Porcelana', price: 180000 },
-        { name: 'Corona Zirconio Monolítico', price: 220000 },
-        { name: 'Corona Zirconio Estratificado', price: 280000 },
-        { name: 'Corona E-MAX', price: 320000 },
-        { name: 'Carilla E-MAX', price: 280000 },
-        { name: 'Incrustación Cerámica', price: 250000 },
-        { name: 'Poste Colado', price: 120000 }
+        { name: 'Corona Metal Porcelana', price: 165000 },
+        { name: 'Corona Zirconio', price: 270000 },
+        { name: 'Ceramica de encia/hombro céramico por unidad', price: 50000 },
+        { name: 'Corona, Carilla, Incrustación o "Lente" E-MAX', price: 280000 },
+        { name: 'Colado de UCLA calcinable, núcleos o ganchos', price: 55000 }
+        { name: 'Hombro cerámico 180°', price: 50000 },
+        { name: 'Implant bridge zro2 pro conexión', price: 1150000 },
+        { name: 'Barra hibrida cada conexión (metal acrílico)', price: 370000 },
+        { name: 'Personalizado de abutment', price: 50000 },
       ]
     },
     {
