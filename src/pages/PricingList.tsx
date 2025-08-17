@@ -28,7 +28,7 @@ const PricingList = () => {
         { name: 'Corona Zirconio', price: 270000 },
         { name: 'Ceramica de encia/hombro céramico por unidad', price: 50000 },
         { name: 'Corona, Carilla, Incrustación o "Lente" E-MAX', price: 280000 },
-        { name: 'Colado de UCLA calcinable, núcleos o ganchos', price: 55000 }
+        { name: 'Colado de UCLA calcinable, núcleos o ganchos', price: 55000 },
         { name: 'Hombro cerámico 180°', price: 50000 },
         { name: 'Implant bridge zro2 pro conexión', price: 1150000 },
         { name: 'Barra hibrida cada conexión (metal acrílico)', price: 370000 },
