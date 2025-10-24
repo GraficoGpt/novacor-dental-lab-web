@@ -26,14 +26,13 @@ const PricingList = () => {
     items: [
       { name: 'Carilla, corona, incrustación o “lente” disilicato de litio E-MAX', price: 250000 },
       { name: 'Cerámica de encía/ hombro cerámico por unidad', price: 40000 },
-      { name: 'Corona metal cerámica', price: 140000 },
-      { name: 'Corona zirconio', price: 260000 },
+      { name: 'Corona metal cerámica', price: 160000 },
+      { name: 'Corona zirconio', price: 250000 },
       { name: 'Colado de UCLA calcinable, núcleos o ganchos', price: 55000 },
-      { name: 'Hombro cerámico 180°', price: 40000 },
+      { name: 'Hombro cerámico 180°', price: 50000 },
       { name: 'Implant bridge zro2 por conexión', price: 1150000 },
       { name: 'Barra híbrida cada conexión (metal acrílico)', price: 360000 },
       { name: 'Personalizado de abutment', price: 50000 },
-      { name: 'Restauraciones en cerómero (carillas incrustaciones)', price: 100000 }
     ]
   },
   {
@@ -42,8 +41,8 @@ const PricingList = () => {
     items: [
       { name: 'Prótesis total o parcial alto impacto (Biodent)', price: 190000 },
       { name: 'Prótesis total o parcial convencional (Biodent)', price: 150000 },
-      { name: 'Acker flexible', price: 140000 },
-      { name: 'Prótesis flexible', price: 250000 },
+      { name: 'Acker flexible', price: 150000 },
+      { name: 'Prótesis flexible', price: 260000 },
       { name: 'Prótesis removible (estructura metálica)', price: 320000 },
       { name: 'Rebase', price: 60000 },
       { name: 'Reparación', price: 50000 },
@@ -60,7 +59,8 @@ const PricingList = () => {
       { name: 'Placa NMR (dura o blanda)', price: 50000 },
       { name: 'Placa Extra confort', price: 190000 },
       { name: 'Provisionales PMMA monocapa', price: 50000 },
-      { name: 'Provisionales PMMA multicapa', price: 60000 }
+      { name: 'Provisionales PMMA multicapa', price: 60000 },
+      { name: 'Diseño digital (por diente)', price: 30000 }
     ]
   }
 ];
