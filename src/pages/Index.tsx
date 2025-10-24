@@ -347,7 +347,7 @@ const Index = () => {
                   <CardTitle>Teléfono</CardTitle>
                 </CardHeader>
                 <CardContent className="text-center">
-                  <p className="text-2xl font-bold mb-2 text-primary">+57 123 456 7890</p>
+                  <p className="text-2xl font-bold mb-2 text-primary">+57 310 872 3348</p>
                   <p className="text-muted-foreground text-sm mb-3">Lunes a Viernes: 8:00 AM - 6:00 PM</p>
                   <p className="text-muted-foreground text-sm">Sábados: 8:00 AM - 2:00 PM</p>
                   <Badge variant="secondary" className="mt-3">
@@ -423,7 +423,6 @@ const Index = () => {
             <div className="flex justify-center space-x-4">
               
               <Badge variant="outline">Garantía Total</Badge>
-              <Badge variant="outline">Entrega Express</Badge>
             </div>
             
             <div className="pt-6 border-t border-border/50">
