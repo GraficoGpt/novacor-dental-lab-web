@@ -365,7 +365,7 @@ const Index = () => {
                   <CardTitle>Email</CardTitle>
                 </CardHeader>
                 <CardContent className="text-center">
-                  <p className="text-2xl font-bold mb-2 text-primary">info@novacor.com</p>
+                  <p className="text-2xl font-bold mb-2 text-primary">novacorlab@gmail.com</p>
                   <p className="text-muted-foreground text-sm mb-3">Respuesta garantizada</p>
                   <p className="text-muted-foreground text-sm">Envía fotos y especificaciones</p>
                   <Badge variant="secondary" className="mt-3">
