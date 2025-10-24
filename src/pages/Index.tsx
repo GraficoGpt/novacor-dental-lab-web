@@ -13,10 +13,6 @@ const Index = () => {
               <Logo className="h-8 w-auto sm:h-10" />
             </div>
             <div className="flex items-center space-x-3">
-              <Badge variant="secondary" className="hidden sm:flex">
-                <Clock className="w-3 h-3 mr-1" />
-                Entrega 24-48h
-              </Badge>
               <Button variant="outline" size="sm" aria-label="Contactar por teléfono">
                 <Phone className="mr-2 h-4 w-4" />
                 Contactar
@@ -49,21 +45,12 @@ const Index = () => {
           }}>
               Especializados en coronas, puentes, prótesis removibles y trabajos de implantología 
               con materiales premium y tecnología de vanguardia. 
-              <span className="text-primary font-medium">Entrega garantizada en 24-48 horas.</span>
             </p>
             
             <div className="flex flex-wrap justify-center gap-4 mb-8 animate-fade-in" style={{
             animationDelay: '0.3s'
           }}>
               
-              <Badge variant="secondary" className="text-sm">
-                <Shield className="w-4 h-4 mr-1" />
-                Garantía de Calidad
-              </Badge>
-              <Badge variant="secondary" className="text-sm">
-                <Timer className="w-4 h-4 mr-1" />
-                Entrega Express
-              </Badge>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{
@@ -77,7 +64,7 @@ const Index = () => {
               
               <div className="flex items-center text-muted-foreground bg-card/50 px-4 py-2 rounded-lg border">
                 <Mail className="mr-2 h-5 w-5" />
-                <span>info@novacor.com</span>
+                <span>novacorlab@gmail.com</span>
               </div>
             </div>
           </div>
@@ -125,7 +112,7 @@ const Index = () => {
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-primary mr-3 flex-shrink-0" />
-                    <span>Puentes de alta estética hasta 14 unidades</span>
+                    <span>Puentes de alta estética</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-primary mr-3 flex-shrink-0" />
@@ -197,11 +184,11 @@ const Index = () => {
                 <ul className="space-y-2 text-sm">
                   <li className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-primary mr-3 flex-shrink-0" />
-                    <span>Toma de color personalizada con guía Vita 3D</span>
+                    <span>Laboratorio 100% digital</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-primary mr-3 flex-shrink-0" />
-                    <span>Articulación en ASA para oclusión perfecta</span>
+                    <span>Provisionales en Resina Dental (Impresión 3D)</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-primary mr-3 flex-shrink-0" />
@@ -230,7 +217,7 @@ const Index = () => {
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">¿Por qué elegir NOVACOR?</h2>
               <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
-                Con más de 15 años de experiencia en el campo protésico, nos hemos consolidado como referente 
+                Con más de 10 años de experiencia en el campo protésico, nos hemos consolidado como referente 
                 en calidad y precisión. Nuestro compromiso es brindar soluciones personalizadas 
                 que superen las expectativas de nuestros clientes, combinando artesanía tradicional 
                 con tecnología de vanguardia.
@@ -240,7 +227,7 @@ const Index = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 mb-12">
               <Card className="text-center border-0 bg-gradient-to-br from-primary/5 to-primary/10 shadow-lg">
                 <CardContent className="pt-6">
-                  <div className="text-4xl font-bold text-primary mb-2">15+</div>
+                  <div className="text-4xl font-bold text-primary mb-2">10+</div>
                   <p className="text-muted-foreground font-medium">Años de Experiencia</p>
                   <p className="text-sm text-muted-foreground mt-1">En el sector protésico</p>
                 </CardContent>
@@ -250,13 +237,6 @@ const Index = () => {
                   <div className="text-4xl font-bold text-primary mb-2">2500+</div>
                   <p className="text-muted-foreground font-medium">Casos Exitosos</p>
                   <p className="text-sm text-muted-foreground mt-1">Trabajos realizados</p>
-                </CardContent>
-              </Card>
-              <Card className="text-center border-0 bg-gradient-to-br from-primary/5 to-primary/10 shadow-lg">
-                <CardContent className="pt-6">
-                  <div className="text-4xl font-bold text-primary mb-2">24h</div>
-                  <p className="text-muted-foreground font-medium">Tiempo de Respuesta</p>
-                  <p className="text-sm text-muted-foreground mt-1">Máximo para cotizaciones</p>
                 </CardContent>
               </Card>
               <Card className="text-center border-0 bg-gradient-to-br from-primary/5 to-primary/10 shadow-lg">
@@ -295,8 +275,8 @@ const Index = () => {
                     <li className="flex items-start">
                       <CheckCircle className="h-4 w-4 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
-                        <span className="font-medium">Articulador digital</span>
-                        <p className="text-muted-foreground">Simulación perfecta de movimientos mandibulares</p>
+                        <span className="font-medium">Impresión 3D</span>
+                        <p className="text-muted-foreground">Impresión 3D de modelos en resina</p>
                       </div>
                     </li>
                   </ul>
@@ -354,7 +334,7 @@ const Index = () => {
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Contáctanos</h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                 Estamos aquí para ayudarte con tus necesidades protésicas. 
-                Respuesta garantizada en menos de 24 horas.
+                Respuesta garantizada.
               </p>
             </div>
             
@@ -386,7 +366,7 @@ const Index = () => {
                 </CardHeader>
                 <CardContent className="text-center">
                   <p className="text-2xl font-bold mb-2 text-primary">info@novacor.com</p>
-                  <p className="text-muted-foreground text-sm mb-3">Respuesta garantizada en menos de 24 horas</p>
+                  <p className="text-muted-foreground text-sm mb-3">Respuesta garantizada</p>
                   <p className="text-muted-foreground text-sm">Envía fotos y especificaciones</p>
                   <Badge variant="secondary" className="mt-3">
                     <Timer className="w-3 h-3 mr-1" />
@@ -432,11 +412,11 @@ const Index = () => {
             <div className="flex justify-center space-x-6 text-sm text-muted-foreground">
               <div className="flex items-center">
                 <Phone className="w-4 h-4 mr-2" />
-                +57 123 456 7890
+                +57 310 872 3348
               </div>
               <div className="flex items-center">
                 <Mail className="w-4 h-4 mr-2" />
-                info@novacor.com
+                novacorlab@gmail.com
               </div>
             </div>
             
